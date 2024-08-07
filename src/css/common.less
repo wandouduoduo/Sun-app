@@ -1,0 +1,52 @@
+@mainColor: #86BD77;
+
+.my-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 46px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.van-form {
+  width: 100%;
+}
+
+.avatar(@size:60px) {
+  width: @size;
+  height: @size;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.flex-row(@justify: center) {
+  display: flex;
+  flex-direction: row;
+  justify-content: @justify;
+  align-items: center;
+}
+
+.flex-column(@justify: center) {
+  display: flex;
+  flex-direction: column;
+  justify-content: @justify;
+  align-items: flex-start;
+}
+
+.font-size-color(@fontSize: 16px, @color: #333) {
+  font-size: @fontSize;
+  color: @color;
+}
